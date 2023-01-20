@@ -7,18 +7,23 @@ public class FlyGroundScript : MonoBehaviour
     [SerializeField] float Speed;
     [SerializeField] int startPoint;
     [SerializeField] Transform[] points;
+    [SerializeField] bool isMove = true;
 
     [SerializeField] int i;
 
     void Start()
     {
-        transform.position = points[startPoint].position;
+      if(isMove) {
+         transform.position = points[startPoint].position;
+      }
     }
 
     // Update is called once per frame
     void Update()
     {
+      if(isMove) {
         Direction();
+      }
         
 
     }
