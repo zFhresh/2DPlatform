@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1557943739072255894}
   m_Layer: 0
   m_Name: FlyGround (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +103,10 @@ PrefabInstance:
     - target: {fileID: 749779518559801609, guid: 8de1b218cf9f1894ab2092ca773b645c, type: 3}
       propertyPath: m_Name
       value: FlyGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 749779518559801609, guid: 8de1b218cf9f1894ab2092ca773b645c, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 749779518559801612, guid: 8de1b218cf9f1894ab2092ca773b645c, type: 3}
       propertyPath: m_RootOrder
