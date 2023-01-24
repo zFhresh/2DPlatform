@@ -30,7 +30,7 @@ public class PlayerScript : MonoBehaviour
     }
     public void Dead() {
         anim.SetTrigger("Death");
-        
+        Debug.Log("Öldün");
         this.enabled = false;
     }
     bool isCanJump = true,isSlide=false;
@@ -107,7 +107,7 @@ public class PlayerScript : MonoBehaviour
    [SerializeField] LayerMask Mask;
     public void Raycast() {
         //? Sabit bir script 
-         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up,1f,Mask);
+         RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up,1.5f,Mask);
         if (hit.collider != null)
         {
             RaycastHitSomething(hit);

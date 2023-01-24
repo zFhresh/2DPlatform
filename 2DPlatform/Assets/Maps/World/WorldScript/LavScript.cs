@@ -8,7 +8,7 @@ public class LavScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         StartCoroutine(DeadParticleTimer(other));
         if(other.tag == "Player") {
-            other.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            other.gameObject.GetComponent<PlayerScript>().GetDamage(200);
             return;
         }
         Destroy(other.gameObject);
